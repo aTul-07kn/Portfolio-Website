@@ -22,7 +22,7 @@ body{
     color: var(--text-color)
 }
 header{
-    background: rgba(0, 0, 0, 0.15);
+    background: transparent;
     position: fixed;
     width: 100%;
     top: 0;
@@ -65,13 +65,11 @@ header .navlist a.active{
 
 
 /* Home CSS */
-section{
-    padding: 150px 12%;
-}
 .home{
     /* position: relative;
     height: 100vh;
     width: 100%; */
+    padding: 150px 12% 100px 12%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -81,7 +79,7 @@ section{
     max-width:380px;
     height: auto;
 }
-.home-text .text{
+.text{
     margin-bottom: 19px;
 }
 .hello{
@@ -111,7 +109,7 @@ section{
     font-size: var(--p-font);
     line-height: 1.8;
 }
-#resume{
+.btn{
     padding: 6px 9px;
     font-size: 18px;
     color: var(--text-color);
@@ -121,7 +119,41 @@ section{
     border: none;
     cursor: pointer;
 }
-#resume:hover{
+.btn:hover{
     box-shadow: 5px 7px var(--second-bg-color);
     transition: all 0.45s ease;
+}
+header.sticky{
+    background-color: #0c0b0b60;
+    padding: 17px 10%;
+}
+/* About me CSS */
+.about{
+    padding: 0 12% 150px 12%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .aboutme-img img{
+    max-width: 390px;
+    height: auto;
+}
+.about .about-text{
+    max-width: 55%;
+}
+.about .about-text h2{
+    font-size: var(--h2-font);
+    font-weight: 800;
+}
+.about .about-text h2 span{
+    color: var(--main-color);
+}
+.about .about-text h3{
+    font-size: 1.5rem;
+}
+.about .about-text p{
+    color: var(--second-color);
+    line-height: 1.8;
+    font-size: var(--p-font);
 }
