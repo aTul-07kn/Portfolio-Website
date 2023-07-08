@@ -157,3 +157,86 @@ header.sticky{
     line-height: 1.8;
     font-size: var(--p-font);
 }
+
+/* skills CSS */
+.skills-sec{
+    padding: 0 12% 150px 12%;
+}
+.heading{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.heading span{
+    color: var(--main-color);
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.skill-heading{
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+.skill-heading span{
+    color: var(--main-color);
+}
+.skill-bar{
+    min-width: 25%;
+}
+.skill{
+    width: 100%;
+    padding: 0 4px;
+    border-radius: 5px;
+    color: #202020;
+    font-weight: 800;
+    text-align: right;
+    background: var(--second-color);
+    /* left to right transition */
+    background: linear-gradient(to right, var(--main-color) 50%, var(--second-color) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .3s ease-out;
+}
+.skill:hover{
+    background-position: left bottom;
+    color: var(--text-color);
+}
+.html{
+    width: 75%;
+    background-color: var(--main-color);
+}
+.css{
+    width: 60%;
+    background-color: var(--main-color);
+}
+.js{
+    width: 45%;
+    background-color: var(--main-color);
+}
+.py{
+    width: 70%;
+    background-color: var(--main-color);
+}
+.java{
+    width: 65%;
+    background-color: var(--main-color);
+}
+.ini{
+    width: 80%;
+    background-color: var(--main-color);
+}
+.comm{
+    width: 70%;
+    background-color: var(--main-color);
+}
+.solve{
+    width: 75%;
+    background-color: var(--main-color);
+}
+.team{
+    width: 85%;
+    background-color: var(--main-color);
+}
