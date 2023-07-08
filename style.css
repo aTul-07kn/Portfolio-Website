@@ -72,8 +72,12 @@ header .navlist a.active{
     padding: 150px 12% 100px 12%;
     display: flex;
     flex-wrap: wrap;
+    gap: 25%;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+}
+.item{
+    flex: 1;
 }
 .home .profile-img img{
     max-width:380px;
@@ -128,19 +132,29 @@ header.sticky{
     padding: 17px 10%;
 }
 /* About me CSS */
-.about{
+.about-sec{
     padding: 0 12% 150px 12%;
+}
+.heading{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+.heading span{
+    color: var(--main-color);
+}
+.about{
     display: flex;
     flex-wrap: wrap;
+    gap: 25%;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
+
 .about .aboutme-img img{
     max-width: 390px;
     height: auto;
-}
-.about .about-text{
-    max-width: 55%;
 }
 .about .about-text h2{
     font-size: var(--h2-font);
@@ -162,19 +176,11 @@ header.sticky{
 .skills-sec{
     padding: 0 12% 150px 12%;
 }
-.heading{
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 800;
-}
-.heading span{
-    color: var(--main-color);
-}
 .skills{
     display: flex;
     flex-wrap: wrap;
+    gap: 25%;
     align-items: center;
-    justify-content: space-around;
 }
 .skill-heading{
     margin: 15px 0;
@@ -196,7 +202,7 @@ header.sticky{
     background: var(--second-color);
     /* left to right transition */
     background: linear-gradient(to right, var(--main-color) 50%, var(--second-color) 50%);
-    background-size: 200% 100%;
+    background-size: 210% 100%;
     background-position: right bottom;
     transition: all .3s ease-out;
 }
@@ -240,3 +246,52 @@ header.sticky{
     width: 85%;
     background-color: var(--main-color);
 }
+
+/* portfolio CSS */
+.portfolio{
+    padding: 0 12% 150px 12%;
+}
+.portfolio .project-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+.portfolio .project-box .project{
+    flex: 1 1 20rem;
+    height: 215px;
+    max-width: 325px;
+    border-radius: 7px;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.project-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.project .content{
+    position: absolute;
+    top: -100%;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: #f1c9b9be;
+    padding: 25px 8px;
+    font-size: 1.1rem;
+}
+.project .content h3{
+    color: var(--bg-color);
+}
+.project:hover{
+    box-shadow: 13px 10px 13px rgba(0, 0, 0, 0.7);
+}
+.project:hover .content{
+    top: 0;
+    transition: all 0.3s ease;
+}
+

@@ -33,7 +33,7 @@
 
     <!--Homepage section design-->
     <section class="home">
-        <div class="home-text">
+        <div class="item home-text">
             <div class="text hello">
                 <span id="hello-1">Hello</span>
                 <span id="hello-2">I'm</span>
@@ -50,33 +50,35 @@
                 <button class="btn" id="resume" onclick="openResume()">Resume</button>
             </div>
         </div>
-        <div class="profile-img">
+        <div class="item profile-img">
             <img src="images/atul.png" alt="profile image">
         </div>
     </section>
     <!--about section design-->
-    <section class="about">
-        <div class="aboutme-img">
-            <img src="images/aboutme img.png" alt="about me img">
-        </div>
-        <div class="about-text">
-            <h2>About <span>me</span></h2>
-            <h3 class="text">Programmer</h3>
-            <p class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus aliquid ad repellat minus facilis
-                asperiores accusantium nobis perferendis voluptate.Error, provident! Corrupti eveniet delectus sequi
-                enim obcaecati dicta Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aut maiores
-                voluptatum esse eum impedit!.
-            </p>
-            <button class="btn">More About</button>
+    <section class="about-sec">
+        <div class="heading"><h2>About <span>Me</span></h2></div>
+        <div class="about">
+            <div class="item aboutme-img">
+                <img src="images/aboutme img.png" alt="about me img">
+            </div>
+            <div class="item about-text">
+                <h3>Programmer</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus aliquid ad repellat minus facilis
+                    asperiores accusantium nobis perferendis voluptate.Error, provident! Corrupti eveniet delectus sequi
+                    enim obcaecati dicta Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aut maiores
+                    voluptatum esse eum impedit!.
+                </p>
+                <button class="btn">More About</button>
+            </div>
         </div>
     </section>
 
     <!--skills section design-->
     <section class="skills-sec">
-        <div class="skills-text heading"><h2>My <span>Skills</span></h2></div>
+        <div class="heading"><h2>My <span>Skills</span></h2></div>
         <div class="skills">
-            <div class="skill-bar tech-skills">
+            <div class="item skill-bar tech-skills">
                 <div class="skill-heading">Technical <span>Skills</span></div>
                 <p>HTML</p>
                 <div class="skill html">75%</div>
@@ -89,7 +91,7 @@
                 <p>Java</p>
                 <div class="skill java">65%</div>
             </div>
-            <div class="skill-bar professional-skills">
+            <div class="item skill-bar professional-skills">
                 <div class="skill-heading">Professional <span>Skills</span></div>
                 <p>Initiative skills</p>
                 <div class="skill ini">80%</div>
@@ -101,9 +103,42 @@
                 <div class="skill team">85%</div>
             </div>
         </div>
-        
+    </section>
+
+    <!-- Portfolio section design -->
+    <section class="portfolio">
+        <div class="heading"><h2>Latest <span>Projects</span></h2></div>
+        <div class="project-box">
+            <div class="project">
+                <img src="images/straw.jpg" alt="project img">
+                <div class="content">
+                    <h3>STRAW</h3>
+                    <p>System to Recognize Alert and Welcome(STRAW) helps in improving the security system.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/assistant.png" alt="project img">
+                <div class="content">
+                    <h3>Virtual Assistant</h3>
+                    <p>Virtual Assistance with Sentimental Schematics and AI loaded with face and emotion recognition.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/tourism.jpeg" alt="project img">
+                <div class="content">
+                    <h3>Odisha Tourism Webpage</h3>
+                    <p>Odisha tourism responsive web design.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/upcoming.png" alt="project img">
+                <div class="content">
+                    <p>More projects loading...</p>
+                </div>
+            </div>
+        </div>
     </section>
     <script src="index.js"></script>
 </body>
 
-</html>
+</html> 
