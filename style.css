@@ -78,6 +78,7 @@ header .navlist a.active{
 .home .profile-img img{
     max-width:380px;
     height: auto;
+    filter: drop-shadow(0 0 0.85rem var(--main-color));
 }
 .text{
     margin-bottom: 19px;
