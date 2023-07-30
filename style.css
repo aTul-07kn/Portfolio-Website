@@ -4,8 +4,8 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    scroll-behavior: smooth !important;
     font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
 }
 :root{
     --bg-color: #2a2a2a;
@@ -23,7 +23,7 @@ body{
 }
 header{
     background: transparent;
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
     right: 0;
@@ -66,15 +66,11 @@ header .navlist a.active{
 
 /* Home CSS */
 .home{
-    /* position: relative;
-    height: 100vh;
-    width: 100%; */
     padding: 150px 12% 100px 12%;
     display: flex;
     flex-wrap: wrap;
     gap: 25%;
     align-items: center;
-    /* justify-content: space-between; */
 }
 .item{
     flex: 1;
@@ -133,6 +129,8 @@ header.sticky{
     background-color: #0c0b0b60;
     padding: 17px 10%;
 }
+
+
 /* About me CSS */
 .about-sec{
     padding: 0 12% 150px 12%;
@@ -169,6 +167,7 @@ header.sticky{
     font-size: 1.5rem;
 }
 .about .about-text p{
+    width: 100%;
     color: var(--second-color);
     line-height: 1.8;
     font-size: var(--p-font);
@@ -357,4 +356,91 @@ header.sticky{
 
 .contact-form .input:focus{
     box-shadow: 0 0 12px var(--main-color);
+}
+
+/* end section css */
+
+.end{
+    padding: 18px 12%;
+    /* flex: 1 1 10rem; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--second-bg-color);
+    color: var(--second-color);
+}
+.end i{
+    font-size: 35px;
+    color: var(--second-color);
+    background-color: var(--main-color);
+    padding: 5px;
+    border-radius: 7px ;
+}
+
+
+
+/* media querry */
+
+@media (max-width: 1480px) {
+    header{
+        padding: 20px 4%;
+    }
+    header.sticky{
+        padding: 20px 4%;
+    }
+    .home, .about-sec, .skills-sec, .portfolio, .contact{
+        padding: 50px 5% 50px 5%;
+    }
+    .end{
+        padding: 10px 7%;
+    }
+}
+
+@media (max-width: 920px){
+    .about, .skills{
+        gap: 8% 5%;
+    }
+}
+@media (max-width: 890px){
+    #menu-button{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: -200%;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bg-color);
+        text-align: center;
+        transition: all 0.4s ease ;
+    }
+    header .navlist a{
+        /* display: block; */
+        margin: 22px;
+        font-size: 20px;
+        transition: all 0.45s ease;
+        font-weight: 500;
+    }
+    header .navlist a.active{
+        color: var(--text-color);
+    }
+    header .navlist a:hover{
+        color: var(--main-color);
+    }
+    .navlist.open{
+        top:100%;
+    }
+}
+@media (max-width:755px){
+    .home, .about{
+        text-align: center;
+    }
+} 
+@media (max-width:580px){
+    .end i{
+        font-size: 25px;
+    }
 }
